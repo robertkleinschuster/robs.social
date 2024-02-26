@@ -12,6 +12,8 @@ return fn($children, Renderer $renderer, array $params, array $queryParams) => $
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>{$renderer->placeholder('meta.title')}</title>
         <meta name="description" content="{$renderer->placeholder('meta.description')}">
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="icon" href="/favicon.ico" sizes="any">
         {$renderer->placeholder('head')}
     </head>
     <body>
