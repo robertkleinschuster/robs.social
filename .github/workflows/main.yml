@@ -14,6 +14,12 @@ jobs:
       - name: Get latest code
         uses: actions/checkout@v3
 
+      - name: Install dependencies
+        uses: php-actions/composer@v6
+        with:
+          dev: no
+          args: --optimize-autoloader --ignore-platform-reqs
+
       - name: Upload to server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
