@@ -55,8 +55,8 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
           tar_tmp_path: '~/deploy_tmp/'
-          source: "app/*,public/*,vendor/*,config.php,!vendor/*/*/tests,!vendor/*/*/test"
-          target: "~/html/robs.social/"
+          source: "src/*,app/*,public/*,vendor/*,config.php,!vendor/*/*/tests,!vendor/*/*/test"
+          target: "~/html/${{ secrets.domain }}/"
           rm: true
 
       - name: Call post deploy endpoint
