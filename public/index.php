@@ -11,6 +11,7 @@ require 'vendor/autoload.php';
 $factory = new BootstrapFactory();
 $bootstrap = $factory->create(
     dirname(__DIR__) . '/app',
-    dirname(__DIR__) . '/config.php'
+    dirname(__DIR__) . '/config.php',
+    dirname(__DIR__) . '/cache.php'
 );
 $bootstrap->run();
