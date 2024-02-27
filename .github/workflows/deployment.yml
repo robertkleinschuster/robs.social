@@ -57,6 +57,7 @@ jobs:
           tar_tmp_path: '~/deploy_tmp'
           source: "app/*,public/*,vendor/*,config.php"
           target: "~/html/robs.social"
+          rm: true
 
       - name: Call post deploy endpoint
         run: "curl --fail-with-body -X POST -H \"Cache-Control: no-cache\" -H \"Authorization: ${{ secrets.deploy_key }}\" https://${{ secrets.domain }}/.deploy"
