@@ -54,9 +54,9 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          tar_tmp_path: '~/deploy_tmp'
+          tar_tmp_path: '~/deploy_tmp/'
           source: "app/*,public/*,vendor/*,config.php"
-          target: "~/html/robs.social"
+          target: "~/html/robs.social/"
           rm: true
 
       - name: Call post deploy endpoint
