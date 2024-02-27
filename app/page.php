@@ -11,7 +11,7 @@ return function (Renderer $renderer) {
 <h1>robs.social</h1>
 <section>
     <a href="https://instagram.com/robertkleinschuster">Instagram</a>
-    <a href="https://facebook.com/robert.kleinschuster">Facebook</a>
+    <a href="https://www.facebook.com/robert.kleinschuster">Facebook</a>
     <a href="https://t.me/robkleee">Telegram</a>
     <a href="https://github.com/robertkleinschuster">GitHub</a>
 </section>
