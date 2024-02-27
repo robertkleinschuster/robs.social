@@ -22,7 +22,7 @@
   },
   "scripts": {
     "phpunit": "phpunit tests",
-    "phpstan": "phpstan analyse src --level 6",
+    "phpstan": "phpstan analyse app public --level 6",
     "configure-app": "configure-app",
     "dev": [
       "Composer\\Config::disableProcessTimeout",

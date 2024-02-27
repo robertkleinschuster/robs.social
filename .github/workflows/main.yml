@@ -29,6 +29,9 @@ jobs:
       - name: Configure app
         run: composer configure-app
 
+      - name: PHP Stan
+        run: composer phpstan
+
       - name: Upload to server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
