@@ -46,20 +46,17 @@ jobs:
       - name: Configure app
         run: composer configure-app
 
-      - name: Upload to server
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Upload
+        uses: appleboy/scp-action@v0.1.7
         with:
-          server: ${{ secrets.ftp_host }}
-          username: ${{ secrets.ftp_user }}
-          password: ${{ secrets.ftp_password }}
-          protocol: ftps
-          exclude: |
-            **/.git*
-            **/.git*/**
-            vendor/**/tests/**
-            vendor/**/test/**
-            vendor/**/composer.json
-            vendor/**/composer.lock
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          port: ${{ secrets.SSH_PORT }}
+          key: ${{ secrets.SSH_KEY }}
+          tar_tmp_path: 'deploy_tmp/robs.social.tar'
+          source: "app/*,public/*,vendor/*,config.php"
+          target: "html/robs.social"
 
       - name: Call post deploy endpoint
         run: "curl --fail-with-body -X POST -H \"Cache-Control: no-cache\" -H \"Authorization: ${{ secrets.deploy_key }}\" https://${{ secrets.domain }}/.deploy"
