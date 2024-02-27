@@ -54,9 +54,9 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          tar_tmp_path: 'deploy_tmp/robs.social.tar'
+          tar_tmp_path: '~/deploy_tmp'
           source: "app/*,public/*,vendor/*,config.php"
-          target: "html/robs.social"
+          target: "~/html/robs.social"
 
       - name: Call post deploy endpoint
         run: "curl --fail-with-body -X POST -H \"Cache-Control: no-cache\" -H \"Authorization: ${{ secrets.deploy_key }}\" https://${{ secrets.domain }}/.deploy"
