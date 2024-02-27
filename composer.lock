@@ -486,12 +486,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/robertkleinschuster/component-app.git",
-                "reference": "a7d7145fc5824825c75f6125dc65678e965617ab"
+                "reference": "88c4cf9c18b56490d5eb4603bb798beec1380c80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robertkleinschuster/component-app/zipball/a7d7145fc5824825c75f6125dc65678e965617ab",
-                "reference": "a7d7145fc5824825c75f6125dc65678e965617ab",
+                "url": "https://api.github.com/repos/robertkleinschuster/component-app/zipball/88c4cf9c18b56490d5eb4603bb798beec1380c80",
+                "reference": "88c4cf9c18b56490d5eb4603bb798beec1380c80",
                 "shasum": ""
             },
             "require": {
@@ -505,6 +505,9 @@
                 "phpstan/phpstan": "^1.10.21",
                 "phpunit/phpunit": "^10.4.1"
             },
+            "bin": [
+                "bin/configure-app"
+            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -527,7 +530,7 @@
                 "issues": "https://github.com/robertkleinschuster/component-app/issues",
                 "source": "https://github.com/robertkleinschuster/component-app/tree/v0.0.1"
             },
-            "time": "2024-02-27T07:48:57+00:00"
+            "time": "2024-02-27T14:11:19+00:00"
         },
         {
             "name": "robertkleinschuster/component-renderer",

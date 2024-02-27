@@ -1,5 +1,8 @@
 name: Deployment
 
+env:
+  APP_CONFIG_ENVIRONMENT: 'production'
+
 on:
   push:
     branches:
@@ -14,11 +17,16 @@ jobs:
       - name: Get latest code
         uses: actions/checkout@v3
 
-      - name: Install dependencies
-        uses: php-actions/composer@v6
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
         with:
-          dev: no
-          args: --optimize-autoloader --ignore-platform-reqs
+          php-version: '8.2'
+
+      - name: Install dependencies
+        run: composer install --no-dev --optimize-autoloader
+
+      - name: Configure app
+        run: composer configure-app
 
       - name: Upload to server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4

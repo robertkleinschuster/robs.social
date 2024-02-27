@@ -9,5 +9,8 @@ chdir(dirname(__DIR__));
 require 'vendor/autoload.php';
 
 $factory = new BootstrapFactory();
-$bootstrap = $factory->create(dirname(__DIR__) . '/app');
+$bootstrap = $factory->create(
+    dirname(__DIR__) . '/app',
+    dirname(__DIR__) . '/config.php'
+);
 $bootstrap->run();

@@ -23,6 +23,7 @@
   "scripts": {
     "phpunit": "phpunit tests",
     "phpstan": "phpstan analyse src --level 6",
+    "configure-app": "configure-app",
     "dev": [
       "Composer\\Config::disableProcessTimeout",
       "php -S localhost:8080 -t public cli-router.php"
