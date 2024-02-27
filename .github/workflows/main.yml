@@ -45,4 +45,4 @@ jobs:
             vendor/**/composer.lock
 
       - name: Call post deploy endpoint
-        run: "curl -X POST -H \"Cache-Control: no-cache\" -H \"Content-Type: application/json\" -d '{\"deployKey\": \"${{ secrets.deploy_key }}\"}' https://${{ secrets.domain }}/.deploy"
+        run: "curl -X POST -H \"Cache-Control: no-cache\" -H \"Authorization: ${{ secrets.deploy_key }}\" https://${{ secrets.domain }}/.deploy"

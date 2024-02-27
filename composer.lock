@@ -486,12 +486,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/robertkleinschuster/component-app.git",
-                "reference": "bd56eaccc94026c1108a6886518097b22b91db07"
+                "reference": "55b2ebc31bd4744dac547d43f64d9420b4cf9073"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robertkleinschuster/component-app/zipball/bd56eaccc94026c1108a6886518097b22b91db07",
-                "reference": "bd56eaccc94026c1108a6886518097b22b91db07",
+                "url": "https://api.github.com/repos/robertkleinschuster/component-app/zipball/55b2ebc31bd4744dac547d43f64d9420b4cf9073",
+                "reference": "55b2ebc31bd4744dac547d43f64d9420b4cf9073",
                 "shasum": ""
             },
             "require": {
@@ -530,7 +530,7 @@
                 "issues": "https://github.com/robertkleinschuster/component-app/issues",
                 "source": "https://github.com/robertkleinschuster/component-app/tree/v0.0.1"
             },
-            "time": "2024-02-27T16:02:15+00:00"
+            "time": "2024-02-27T16:57:49+00:00"
         },
         {
             "name": "robertkleinschuster/component-renderer",
@@ -2593,5 +2593,5 @@
         "php": "^8.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.0.0"
 }
