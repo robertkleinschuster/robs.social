@@ -10,7 +10,24 @@ on:
       - main
 
 jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v3
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
+      - name: Install dependencies
+        run: composer install
+
+      - name: PHP Stan
+        run: composer phpstan
   deployment:
+    needs: test
     runs-on: ubuntu-22.04
     environment:
       name: production
@@ -28,9 +45,6 @@ jobs:
 
       - name: Configure app
         run: composer configure-app
-
-      - name: PHP Stan
-        run: composer phpstan
 
       - name: Upload to server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
