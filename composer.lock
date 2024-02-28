@@ -538,12 +538,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/robertkleinschuster/component-renderer.git",
-                "reference": "5e28ab5b6a6fd7ad88a028dab9b4e8b22652d04c"
+                "reference": "4a85108aea6ca5116563244a263f1bc277207af9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robertkleinschuster/component-renderer/zipball/5e28ab5b6a6fd7ad88a028dab9b4e8b22652d04c",
-                "reference": "5e28ab5b6a6fd7ad88a028dab9b4e8b22652d04c",
+                "url": "https://api.github.com/repos/robertkleinschuster/component-renderer/zipball/4a85108aea6ca5116563244a263f1bc277207af9",
+                "reference": "4a85108aea6ca5116563244a263f1bc277207af9",
                 "shasum": ""
             },
             "require": {
@@ -577,7 +577,7 @@
                 "issues": "https://github.com/robertkleinschuster/component-renderer/issues",
                 "source": "https://github.com/robertkleinschuster/component-renderer/tree/v0.0.1"
             },
-            "time": "2024-02-27T07:43:33+00:00"
+            "time": "2024-02-28T08:56:24+00:00"
         },
         {
             "name": "robertkleinschuster/component-router",
@@ -585,12 +585,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/robertkleinschuster/component-router.git",
-                "reference": "a0ec949314c56bd9edd79c57267e32f9112da4e3"
+                "reference": "90059b0832d396bdedcd7d2c948cd6a6b7b9f53c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robertkleinschuster/component-router/zipball/a0ec949314c56bd9edd79c57267e32f9112da4e3",
-                "reference": "a0ec949314c56bd9edd79c57267e32f9112da4e3",
+                "url": "https://api.github.com/repos/robertkleinschuster/component-router/zipball/90059b0832d396bdedcd7d2c948cd6a6b7b9f53c",
+                "reference": "90059b0832d396bdedcd7d2c948cd6a6b7b9f53c",
                 "shasum": ""
             },
             "require": {
@@ -625,7 +625,7 @@
                 "issues": "https://github.com/robertkleinschuster/component-router/issues",
                 "source": "https://github.com/robertkleinschuster/component-router/tree/v0.0.1"
             },
-            "time": "2024-02-27T17:36:50+00:00"
+            "time": "2024-02-28T20:45:48+00:00"
         },
         {
             "name": "slim/psr7",
