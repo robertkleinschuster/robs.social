@@ -53,7 +53,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           key: ${{ secrets.SSH_KEY }}
-          tar_tmp_path: '~/deploy_tmp/'
+          tar_tmp_path: '/var/www/virtual/robs/deploy_temp/'
           source: "src/*,app/*,public/*,vendor/*,config.php,!vendor/*/*/tests,!vendor/*/*/test"
           target: "/var/www/virtual/robs/deploy_target/"
           rm: true
