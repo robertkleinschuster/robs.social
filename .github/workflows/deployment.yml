@@ -53,9 +53,9 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           key: ${{ secrets.SSH_KEY }}
-          tar_tmp_path: '/var/www/virtual/robs/deploy_temp/'
+          tar_tmp_path: '/var/www/virtual/robs/deploy_temp'
           source: "src/*,app/*,public/*,vendor/*,config.php,!vendor/*/*/tests,!vendor/*/*/test"
-          target: "/var/www/virtual/robs/deploy_target/"
+          target: "/var/www/virtual/robs/deploy_target"
           rm: true
 
       - name: Call post deploy endpoint
