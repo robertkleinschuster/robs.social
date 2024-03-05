@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use Robs\Component\App\Components\Link;
-use Robs\Component\App\Plugin\Url;
-use Robs\Component\Renderer\Renderer;
-use Robs\Component\Router\Reactive;
+use Zenith\Components\Link;
+use Zenith\Plugin\Url;
+use Mosaic\Renderer;
+use Compass\Reactive;
 
 return #[Reactive] function (Renderer $renderer, $children) {
     yield new Link(new Url('/testing'));

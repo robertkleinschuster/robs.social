@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Robs\Component\Router\Lazy;
+use Compass\Lazy;
 
 return #[Lazy] function () {
     yield 'About';

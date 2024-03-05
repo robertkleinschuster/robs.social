@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Robs\Component\Renderer\Renderer;
+use Mosaic\Renderer;
 
 return function (Renderer $renderer) {
     yield $renderer->capture('meta.title', 'robs.social');
